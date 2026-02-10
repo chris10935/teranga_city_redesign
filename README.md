@@ -1,1 +1,0 @@
-# teranga_city_redesign
