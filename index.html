@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teranga City | Premium Cocktails & Nightlife</title>
+    <meta
+      name="description"
+      content="Teranga City - Atlanta's premier upscale cocktail lounge. Reserve your table for craft cocktails, VIP sections, live DJs, and unforgettable nights."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/teranga_city_redesign/assets/index-BNKGf_Ta.js"></script>
+    <link rel="stylesheet" crossorigin href="/teranga_city_redesign/assets/index-De6I3t-G.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- RAG Chatbot UI elements (minimal example) -->
+    <div
+      id="chatFab"
+      style="
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 999;
+        background: #0066ff;
+        color: #fff;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 2rem;
+        box-shadow: 0 2px 8px #0002;
+      "
+    >
+      💬
+    </div>
+    <div
+      id="chatPanel"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 90px;
+        right: 24px;
+        z-index: 999;
+        background: #fff;
+        color: #222;
+        border-radius: 16px;
+        width: 320px;
+        max-width: 90vw;
+        box-shadow: 0 2px 16px #0003;
+        flex-direction: column;
+      "
+    >
+      <div
+        style="
+          padding: 12px 16px;
+          border-bottom: 1px solid #eee;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <span>Chatbot</span>
+        <button
+          id="chatClose"
+          style="
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+          "
+        >
+          ✖
+        </button>
+      </div>
+      <div
+        id="chatBody"
+        style="
+          padding: 16px;
+          height: 180px;
+          overflow-y: auto;
+          font-size: 0.95rem;
+        "
+      ></div>
+      <div
+        style="
+          padding: 12px 16px;
+          border-top: 1px solid #eee;
+          display: flex;
+          gap: 8px;
+        "
+      >
+        <input
+          id="chatInput"
+          type="text"
+          placeholder="Ask a question..."
+          style="
+            flex: 1;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+          "
+        />
+        <button
+          id="chatSend"
+          style="
+            background: #0066ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+          "
+        >
+          Send
+        </button>
+      </div>
+    </div>
+    <script src="rag.js"></script>
+  </body>
+</html>
